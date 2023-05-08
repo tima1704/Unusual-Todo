@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
-  font-family:Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Comme', sans-serif;
   overflow: hidden;
+}
+
+html[data-theme='dark'] {
+  --back_color: #2a2626;
+}
+
+html[data-theme='light'] {
+  --back_color: #ede7e7;
+  --color: black
 }
 
 
@@ -12,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #272329;
+  background-color: var(--back_color);
+  color: var(--color);
   height: 100vh;
- 
 }
